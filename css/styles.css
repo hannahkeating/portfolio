@@ -108,6 +108,9 @@ button:focus,
     flex-direction: column;
     text-align: center;
   }
+  .page-footer__item {
+    max-width:20px;
+  }
 * {
   box-sizing: border-box;
 }

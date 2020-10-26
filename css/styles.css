@@ -17,15 +17,15 @@ body {
   background-color: var(--background-color);
 }
 body {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
   line-height: 1.6;
 }
 
 h1 {
-  font-size: 30px;
-  font-weight: var(--font-weight);
+  font-size: 36px;
+  font-weight: 700;
 }
 
 h2 {
@@ -34,7 +34,7 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: var(--font-weight);
 }
 a {
@@ -43,7 +43,8 @@ a {
 a:visited {
   color: var(--primary-color);
 }
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
 }
 a:active {
@@ -53,11 +54,11 @@ a.button {
   border: none;
   display: inline-block;
   font-family: inherit;
-  background-color: #2F4F4F;
+  background-color: #2f4f4f;
   color: white;
   text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
+  padding: 3px;
+  border-radius: 20px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition-duration: 0.2s opacity;
 }
@@ -103,13 +104,13 @@ button:focus,
   text-align: center;
 }
 .page-footer {
-    clear: both;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
 * {
   box-sizing: border-box;
 }
@@ -125,22 +126,26 @@ button:focus,
 }
 
 @keyframes opacity-change {
-  0% { opacity: 0;}
-  100% { opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .st15__1 {
   animation: 1s opacity-change infinite alternate;
 }
 @keyframes color-change {
   from {
-    fill: #0A585C;
+    fill: #0a585c;
   }
   to {
     fill: #d9fffe;
   }
 }
 .st6__1 {
-  animation: .25s color-change infinite alternate;
+  animation: 0.25s color-change infinite alternate;
 }
 /* Grid fallback*/
 
@@ -177,13 +182,14 @@ button:focus,
 }
 .grid__item {
   background-color: var(--primary-color);
+  padding: 20px;
 }
 @media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
   }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
+@media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
